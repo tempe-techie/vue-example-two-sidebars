@@ -1,13 +1,14 @@
 @import './bootstrap.css';
 
-.slide-fade-enter-active, .slide-fade-leave-active {
-  transition: all 0.3s ease-out;
-}
+.slide-enter { transform: translateX(100%) }
+.slide-enter-to { transform: translateX(0) }
+.slide-enter-active { position: absolute }
 
-.slide-fade-enter-from, .slide-fade-leave-to {
-  transform: translateX(20px);
-  opacity: 0;
-}
+.slide-leave { transform: translateX(0) }
+.slide-leave-to { transform: translateX(-100%) }
+
+.slide-enter-active,
+.slide-leave-active { transition: all 750ms ease-in-out }
 
 /* Desktop only */
 @media screen and (min-width: 1000px) {
