@@ -1,6 +1,6 @@
 <template>
 <div class="col-auto px-0">
-  <div id="sidebar2" class="collapse collapse-horizontal border-start" :class="{ show: sidebarStore.showRightSidebar }">
+  <div id="sidebar2" class="collapse collapse-horizontal border-start">
     <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100">
       <div class="card">
         <div class="card-body">
