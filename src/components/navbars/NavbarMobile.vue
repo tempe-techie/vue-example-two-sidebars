@@ -1,13 +1,21 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile">
     <div class="container-fluid">
-      <button @click="toggleLeftSidebar" class="nav-item btn navbar-toggler nav-btn-left" type="button">
+      <button 
+        @click="toggleLeftSidebar" 
+        data-bs-target="#sidebar1" data-bs-toggle="collapse" 
+        class="nav-item btn navbar-toggler nav-btn-left" type="button"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <span class="navbar-brand mx-auto">Brand</span>
 
-      <button @click="toggleRightSidebar" class="nav-item btn navbar-toggler nav-btn-right" type="button">
+      <button 
+        @click="toggleRightSidebar" 
+        data-bs-target="#sidebar2" data-bs-toggle="collapse" 
+        class="nav-item btn navbar-toggler nav-btn-right" type="button"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>

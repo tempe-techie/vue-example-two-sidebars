@@ -3,8 +3,8 @@
   <NavbarDesktop v-if="!isMobile" />
 
   <!-- Main content with sidebars -->
-  <div class="d-flex flex-column align-items-center mt-3">
-    <div class="d-flex main-container">
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
 
       <LeftSidebar />
       <MainContent />

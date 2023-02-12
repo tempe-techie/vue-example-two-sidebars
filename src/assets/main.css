@@ -1,22 +1,12 @@
 @import './bootstrap.css';
 
-.slide-enter { transform: translateX(100%) }
-.slide-enter-to { transform: translateX(0) }
-.slide-enter-active { position: absolute }
-
-.slide-leave { transform: translateX(0) }
-.slide-leave-to { transform: translateX(-100%) }
-
-.slide-enter-active,
-.slide-leave-active { transition: all 750ms ease-in-out }
+#sidebar-nav {
+  width: 100vw;
+}
 
 /* Desktop only */
 @media screen and (min-width: 1000px) {
-  .center-col {
-    width: 150%;
-  }
-
-  .main-container {
-    max-width: 1800px;
+  #sidebar-nav {
+    width: 260px;
   }
 }
