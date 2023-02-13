@@ -15,14 +15,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import { useSidebarStore } from '../stores/sidebars';
-
-export default {
-  setup() {
-    const sidebarStore = useSidebarStore();
-    return { sidebarStore }
-  }
-}
-</script>
